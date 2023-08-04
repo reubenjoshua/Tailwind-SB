@@ -7,18 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header flex flex-row justify-between relative">
+    <header class="header fixed w-full z-999 shadow-sm">
         <div class="container">
-            <div class="branding">
-                <div class="branding__wrapper flex justify-between">
-                    <img class="h-auto max-w-[3rem]" src="./img/sblogo.svg" alt="">
-                    <div class="header__nav hidden">
-                        <ul>
-                        <li class="li"><a href="">Menu</a></li>
-                        <li class="li"><a href="">Merchandise</a></li>
-                        <li class="li"><a href="">Rewards</a></li>
+            <div class="branding__wrapper flex items-center justify-between">
+            <div class="branding flex items-center gap-[1rem] ">
+                    <img class="w-[3rem]" src="./img/sblogo.svg" alt="">
+                    <div class="header__nav bg-white top-[7rem] right-[-100rem] w-[70%] h-[100vh] absolute lg:static lg:h-auto lg:w-full">
+                        <ul class="header__left text-[1rem] flex flex-col lg:flex-row ">
+                        <li class="li"><a href="" class="hover:text-green-400">Menu</a></li>
+                        <li class="li"><a href="" class="hover:text-green-400">Merchandise</a></li>
+                        <li class="li border-b-[1px] lg:border-none"><a class="hover:text-green-400" href="">Rewards</a></li>
+                    </ul>
+                    
+                    <ul class="header__right lg:hidden ">
+                        <li class="li text-[1.3rem]"><a href="">Find a store</a></li>
+                        <li class="li text-[1.5rem]"><a href="" class="outline rounded-full p-[1rem]">Sign in</a></li>
+                        <li class="li"><a href="" class="text-[1.5rem] rounded-full bg-black text-white text-center w-[90%] p-[1rem]" >Join now</a></li>
                     </ul>
                     </div>
+                    </div>
+                    <ul class="header__actions lg:flex lg:items-center lg:gap-[1.5rem] hidden">
+                        <div class="li"><a href="" class="hover:text-green-400">Find a store</a></div>
+                        <div class="li"><a href="" class="outline rounded-full p-[1rem]">Sign in</a></div>
+                        <div class="li"><a href="" class="rounded-full bg-black text-white w-[70%] p-[1rem]">Join now</a></div>
+                    </ul>
                     <div class="toggle__menu p-[1rem] space-y-[.2rem] hover:bg-gurey rounded-xl">
                         <span class="w-[2rem] h-[.2rem] bg-snow block rounded-full"></span>
                         <span class="w-[2rem] h-[.2rem] bg-snow block rounded-full"></span>
@@ -26,8 +38,7 @@
                     </div>
                 </div>
             </div>
-            
-        </div>
     </header>
+    <script src="../dist/js/script.js"></script>
 </body>
 </html>

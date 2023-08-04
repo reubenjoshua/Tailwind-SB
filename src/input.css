@@ -7,3 +7,25 @@
     margin: 0 auto;
     padding: 1.5rem;
 }
+
+@layer components{
+    .header__nav.open{
+    @apply right-[0rem] transition-all
+}
+
+    .toggle__menu.open .transition-transform:nth-child(1){
+        transform: rotate(-45deg) translate(-4px, 6px);
+    }
+    .toggle__menu.open .transition-transform:nth-child(2){
+        opacity: 0;
+    }
+    .toggle__menu.open .transition-transform:nth-child(3){
+       transform: rotate(-45deg) translate(-4px, 6px);
+    }
+    .header__nav li{
+        @apply p-[2rem];
+    }
+    .toggle__menu{
+        @apply lg:hidden
+    }
+}
