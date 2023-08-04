@@ -5,7 +5,11 @@ module.exports = {
     extend: {
       colors:{
         'gurey':'#2C2C32',
-        'snow' : '#CDC9C9'
+        'snow' : '#CDC9C9',
+        'puti':'#ffffff',
+    'maitim':'#2b2b2b',
+    'lasalle':'#006341',
+    'semento':'hsl(240,1.51%,50.98%)'
       }
     },
   },

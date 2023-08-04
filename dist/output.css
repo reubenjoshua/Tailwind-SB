@@ -597,16 +597,123 @@ video {
   }
 }
 
+.kalbo {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.kalbo__wrapper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.kalbo__nav {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.kalbo__nav li {
+  border-radius: 0.375rem;
+  padding: .5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.kalbo__nav li.active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.kalbo__desc__wrapper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  padding: 2rem;
+}
+
+.kalbo__item__content {
+  display: none;
+}
+
+.kalbo__item__content img {
+  height: auto;
+  width: 10rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 99 65 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.kalbo__item__content.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.kalbo__text h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.kalbo__text table tr td:first-child {
+  font-weight: 600;
+}
+
+.kalbo__text table tr {
+  display: flex;
+  height: 5rem;
+  flex-direction: column;
+}
+
+.starbucks__wrapper {
+  height: 11rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.starbucks__title h2 {
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.starbuck__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+}
+
+.branding {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.sb__wrapper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 253 244 / var(--tw-bg-opacity));
+}
+
 .fixed {
   position: fixed;
 }
 
 .absolute {
   position: absolute;
-}
-
-.relative {
-  position: relative;
 }
 
 .right-\[-100rem\] {
@@ -625,6 +732,10 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .hidden {
   display: none;
 }
@@ -637,12 +748,12 @@ video {
   height: 100vh;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .w-\[2rem\] {
   width: 2rem;
+}
+
+.w-\[3rem\] {
+  width: 3rem;
 }
 
 .w-\[70\%\] {
@@ -655,26 +766,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[3rem\] {
-  width: 3rem;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[40\%\] {
-  width: 40%;
-}
-
-.max-w-\[3rem\] {
-  max-width: 3rem;
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -691,14 +782,6 @@ video {
 
 .gap-\[1rem\] {
   gap: 1rem;
-}
-
-.gap-\[\] {
-  gap: ;
-}
-
-.gap-\[1\.5rem\] {
-  gap: 1.5rem;
 }
 
 .space-y-\[\.2rem\] > :not([hidden]) ~ :not([hidden]) {
@@ -738,18 +821,6 @@ video {
   padding: 1rem;
 }
 
-.p-\[\.7rem\] {
-  padding: .7rem;
-}
-
-.p-\[\.8rem\] {
-  padding: .8rem;
-}
-
-.p-\[\.9rem\] {
-  padding: .9rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -781,8 +852,12 @@ video {
   outline-style: solid;
 }
 
-.outline-\[1rem\] {
-  outline-width: 1rem;
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .container{
@@ -791,18 +866,9 @@ video {
   padding: 1.5rem;
 }
 
-.hover\:cursor-pointer:hover {
-  cursor: pointer;
-}
-
 .hover\:bg-gurey:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(44 44 50 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-green-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
 .hover\:text-green-400:hover {
@@ -827,12 +893,6 @@ video {
     height: auto;
   }
 
-  @media (min-width: 1024px) {
-    .lg\:lg\:h-auto {
-      height: auto;
-    }
-  }
-
   .lg\:w-full {
     width: 100%;
   }
@@ -847,14 +907,6 @@ video {
 
   .lg\:gap-\[1\.5rem\] {
     gap: 1.5rem;
-  }
-
-  .lg\:border {
-    border-width: 1px;
-  }
-
-  .lg\:border-b-0 {
-    border-bottom-width: 0px;
   }
 
   .lg\:border-none {

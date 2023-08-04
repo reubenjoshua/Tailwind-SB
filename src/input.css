@@ -28,4 +28,63 @@
     .toggle__menu{
         @apply lg:hidden
     }
+
+    .kalbo{
+        @apply bg-white
+    }
+    .kalbo__wrapper{
+        @apply bg-gray-600 py-[2rem]
+    }
+    .kalbo__nav{
+        @apply  max-w-[25rem] flex flex-wrap gap-[2rem] mx-auto justify-center
+    }
+    .kalbo__nav li{
+        @apply p-[.5rem] rounded-md text-white
+    }
+    .kalbo__nav li.active{
+        @apply bg-blue-500 
+    }
+    .kalbo__desc__wrapper{
+        @apply bg-gray-300 p-[2rem] 
+    }
+    .kalbo__item__content{
+        @apply hidden
+    }
+    .kalbo__item__content img{
+        @apply w-[10rem] h-auto rounded-full bg-lasalle px-[1rem]
+    }
+    .kalbo__item__content.active{
+        @apply flex gap-[2rem] items-center justify-center
+    }
+    .kalbo__text h2{
+        @apply text-[1.5rem] font-bold mb-[1rem]
+    }
+    .kalbo__text table tr td:first-child{
+        @apply font-semibold
+    }
+    .kalbo__text table tr{
+        @apply h-[5rem] flex flex-col
+    }
+
+    .starbucks__wrapper{
+        @apply bg-gray-100 py-[2.5rem] h-[11rem]
+    }
+    .starbucks__title h2{
+        @apply  text-[2rem] font-semibold text-center pb-[2rem]
+    }
+    .starbuck__nav{
+        @apply  flex flex-row gap-[2rem] justify-center font-bold font-sans
+    }
+    .branding{
+        @apply text-black 
+    }
+    .sb__wrapper{
+        @apply bg-green-50
+    }
+
+
+
+
+
+    
 }
