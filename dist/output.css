@@ -689,7 +689,7 @@ video {
   font-weight: 600;
 }
 
-.starbuck__nav {
+.starbucks__nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -698,14 +698,79 @@ video {
   font-weight: 700;
 }
 
-.branding {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .sb__wrapper {
   --tw-bg-opacity: 1;
   background-color: rgb(240 253 244 / var(--tw-bg-opacity));
+  text-align: center;
+}
+
+.sb__item__content h2 {
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.sb__item__content {
+  display: none;
+}
+
+.sb__item__content.active {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .sb__item__content.active {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.sb__item__content img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 15rem;
+  width: 25rem;
+}
+
+@media (min-width: 1024px) {
+  .sb__item__content img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+
+.starbucks__nav__link {
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.starbucks__nav__link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 99 65 / var(--tw-text-opacity));
+}
+
+.starbucks__nav__link::after {
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  height: 3px;
+  width: 0%;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 99 65 / var(--tw-bg-opacity));
+  transition-duration: 300ms;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.starbucks__nav__link:hover::after {
+  width: 100%;
 }
 
 .fixed {

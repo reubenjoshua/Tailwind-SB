@@ -72,15 +72,35 @@
     .starbucks__title h2{
         @apply  text-[2rem] font-semibold text-center pb-[2rem]
     }
-    .starbuck__nav{
+    .starbucks__nav{
         @apply  flex flex-row gap-[2rem] justify-center font-bold font-sans
     }
-    .branding{
-        @apply text-black 
-    }
     .sb__wrapper{
-        @apply bg-green-50
+        @apply bg-green-50 text-center 
     }
+    .sb__item__content h2{
+        @apply pb-[1.5rem] text-[1.5rem] font-semibold
+    }
+    .sb__item__content{
+        @apply  hidden
+    }
+    .sb__item__content.active{
+        @apply flex flex-col lg:items-center lg:flex lg:flex-row lg:justify-center lg:w-[40%] lg:mx-auto
+    }
+    .sb__item__content img{
+        @apply mx-auto lg:object-fill h-[15rem] w-[25rem]
+    }
+    .starbucks__nav__link{
+        @apply relative tracking-[1px] hover:text-lasalle
+    }
+    .starbucks__nav__link::after{
+        @apply content-[''] bg-lasalle h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300
+    }
+    .starbucks__nav__link:hover::after{
+        @apply w-[100%]
+    }
+    
+    
 
 
 
