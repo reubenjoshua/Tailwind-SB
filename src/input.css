@@ -29,6 +29,10 @@
         @apply lg:hidden
     }
 
+    .buhok.open{
+        @apply h-[100vh] w-[100%] bg-black absolute z-[999] top-[5.6rem] left-[0] opacity-[.5] transition-all
+    }
+
     .kalbo{
         @apply bg-white
     }
@@ -73,16 +77,19 @@
         @apply  text-[2rem] font-semibold text-center pb-[2rem]
     }
     .starbucks__nav{
-        @apply  flex flex-row gap-[2rem] justify-center font-bold font-sans
+        @apply  flex flex-row justify-center font-bold font-sans
     }
     .sb__wrapper{
-        @apply bg-green-50 text-center 
+        @apply bg-green-50 text-center h-[400px]
     }
     .sb__item__content h2{
         @apply pb-[1.5rem] text-[1.5rem] font-semibold
     }
     .sb__item__content{
-        @apply  hidden
+        @apply p-[1.5rem] absolute top-[4rem] opacity-0 ease-in duration-300 lg:flex lg:left-1/2 lg:-translate-x-1/2
+    }
+    .sb__item__content.active{
+        @apply opacity-[1] top-0 ease-in duration-[.5s]
     }
     .sb__item__content.active{
         @apply flex flex-col lg:items-center lg:flex lg:flex-row lg:justify-center lg:w-[40%] lg:mx-auto
@@ -93,12 +100,118 @@
     .starbucks__nav__link{
         @apply relative tracking-[1px] hover:text-lasalle
     }
-    .starbucks__nav__link::after{
+    .starbucks__nav li{
+        @apply px-[1.5rem] py-[1rem] relative
+    }
+    .starbucks__nav li:after{
+        @apply content-[''] w-0 h-[3px] bg-lasalle block absolute bottom-0 left-0 origin-bottom-left ease-in duration-[.5s]
+    }
+    .starbucks__nav li.active:after{
+        @apply w-full
+    }
+    /* .starbucks__nav__link::after{
         @apply content-[''] bg-lasalle h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300
     }
     .starbucks__nav__link:hover::after{
         @apply w-[100%]
+    } */
+
+/*BUTTON*/
+
+.btn{
+    background-color: transparent;
+    padding: 0.2rem 1rem;
+    border-radius:3rem;
+    border: 1px solid #2b2b2b;
+}
+
+.btn.bg--green{
+    background:#1E3932;
+    color:#ffffff;
+    border:1px solid #ffffff;
+}
+.btn.bg--green:hover{
+    background-color: #006341;
+}
+/*BANNER*/
+.banner{
+    background-image:url("./img/star.png");
+    background-size:cover;
+    background-color:#D0EAE4;
+    background-position-y:15rem;
+    background-repeat:no-repeat;
+    height:550px;
+    text-align:center;
+    @media screen and (min-width:1024px){
+        background-position-y:6rem;
+        background-size:contain;
+        background-position-x:70rem;
+        height:800px;
+        text-align:unset;
+        display:flex;
+        align-items:center;
     }
+}
+.banner__wrapper h1{
+    @apply text-[1.5rem] pb-[1rem] mx-[7rem] font-bold lg:max-w-[15rem] lg:mx-0 lg:text-[2rem]
+}
+.banner__wrapper p{
+    @apply pb-[2rem] text-[1.5rem]
+}
+.banner__wrapper span{
+    @apply text-[1.5rem] hidden sm:block lg:pt-[1.5rem] lg:text-[1rem] lg:font-semibold
+}
+.banner__wrapper li{
+    @apply underline pt-[1rem] lg:hidden 
+}
+.banner__wrapper a:first-child{
+    @apply lg:underline lg:hover:text-lasalle
+}
+.started__title h2{
+    @apply text-[2rem] text-center pb-[1rem]
+}
+.started__title p{
+    @apply text-center
+}
+.started__first h2{
+    @apply text-[1.5rem] text-center ml-[4.5rem]
+}
+.started__first span{
+   @apply ml-[4.5rem]
+}
+.started__first a:last-child{
+    @apply max-w-[80%] mx-auto
+}
+.kamote{
+    @apply flex flex-wrap lg:text-center text-lasalle
+}
+.started__master{
+    @apply lg:flex lg:flex-row lg:mx-auto lg:align-middle 
+}
+.button{
+    @apply lg:mx-auto lg:ml-[3.8rem]
+}
+.started__first{
+    @apply lg:text-center py-[1.5rem]
+}
+.started__first h2{
+    @apply lg:my-[1.5rem] lg:w-[80%]
+}
+.extras__title h2{
+    @apply text-[2rem] text-center
+}
+.extras__title p{
+    @apply text-[1rem] text-center
+}
+
+
+
+
+
+
+
+
+
     
     
 
