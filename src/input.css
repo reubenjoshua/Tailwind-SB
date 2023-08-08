@@ -2,10 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+    font-family: Lato;
+    src: url("../fonts/Lato-Regular.woff");
+}
+
+body{
+    font-family:Lato;
+}
+
 .container{
     max-width: 90rem;
     margin: 0 auto;
     padding: 1.5rem;
+}
+.altcontainer{
+    max-width: 115rem;
+    margin: 0 auto;
+    padding: 2rem;
+    height: 100%;
+    @media screen and (max-width:500px){
+        background-position-y:6rem;
+        background-size:contain;
+        background-position-x:50rem;
+        text-align:unset;
+        padding:0rem;
+    }
 }
 
 @layer components{
@@ -165,7 +187,7 @@
     @apply underline pt-[1rem] lg:hidden 
 }
 .banner__wrapper a:first-child{
-    @apply lg:underline lg:hover:text-lasalle
+    @apply lg:underline lg:hover:text-lasalle hover:no-underline
 }
 .started__title h2{
     @apply text-[2rem] text-center pb-[1rem]
@@ -198,11 +220,151 @@
     @apply lg:my-[1.5rem] lg:w-[80%]
 }
 .extras__title h2{
-    @apply text-[2rem] text-center
+    @apply text-[2rem] text-center pb-[1.5rem] font-semibold
 }
 .extras__title p{
-    @apply text-[1rem] text-center
+    @apply text-[.9rem] text-center lg:text-[1rem]
 }
+.extras__title{
+    @apply lg:align-middle lg:mx-auto lg:w-[50%]
+}
+.extras__group{
+    @apply flex flex-row pt-[2.5rem] 
+}
+.extras__group img{
+    @apply h-[9rem] w-[9rem] pt-[1rem] justify-center lg:mx-auto 
+}
+.extras__text{
+    @apply ml-[2rem] w-[80%] mx-auto lg:pl-[1.5rem]
+}
+.extras__text p{
+    @apply pt-[1.5rem]
+}
+.extras__a{
+    @apply underline text-lasalle pt-[1.5rem] font-semibold hover:no-underline
+}
+.extras__text h2{
+    @apply text-[1.4rem] lg:pt-[3rem]
+}
+.extras__group{
+    @apply lg:flex lg:flex-col lg:justify-center
+}
+.extras__master{
+    @apply lg:align-middle lg:mx-auto lg:text-center
+}
+.stars__title{
+    @apply text-center
+}
+.stars__title h2{
+    @apply text-[1.5rem] font-bold pb-[1.5rem]
+}
+.stars__title p{
+    @apply font-semibold pb-[1.5rem]
+}
+.stars__head h2{
+    @apply font-bold
+}
+.stars__group img{
+    @apply h-[12rem] w-[10rem]
+}
+.stars__group{
+    @apply flex flex-row
+}
+.stars__laman{
+    @apply pl-[1.5rem] w-[90%] mx-auto
+}
+.stars__laman h2{
+    @apply font-semibold pb-[1rem] 
+}
+.stars__next{
+    @apply flex flex-row
+}
+.stars__next img{
+    @apply h-[12rem] w-[10rem]
+}
+.stars__nilalaman{
+    @apply pl-[1.5rem]
+}
+.stars__nilalaman h2{
+    @apply font-semibold pb-[1rem]
+}
+.stars__funds{
+    @apply flex flex-row pt-[1.5rem]
+}
+.stars__funds img{
+    @apply h-[12rem] w-[10rem]
+}
+.stars__card{
+    @apply flex flex-row pt-[1.5rem]
+}
+.stars__card img{
+    @apply h-[12rem] w-[10rem]
+}
+.funds__context{
+    @apply pl-[1.5rem]
+}
+.funds__context h2{
+    @apply text-[1rem] font-semibold pb-[1.5rem]
+}
+.card__context{
+    @apply pl-[1.5rem]
+}
+.card__context h2{
+    @apply text-[1rem] font-semibold pb-[1.5rem]
+}
+.funds__header h2{
+    @apply font-bold pt-[1.5rem]
+}
+.stars__main{
+    @apply lg:flex lg:justify-center
+}
+.stars__next p{
+    @apply lg:max-w-[20rem]
+}
+.stars__group p{
+    @apply lg:max-w-[17rem]
+}
+.stars__funds p{
+    @apply lg:max-w-[15rem]
+}
+.stars__card p{
+    @apply lg:max-w-[15rem]
+}
+.rewards__header{
+    @apply text-center lg:max-w-[30%] lg:mx-auto
+}
+.rewards__miles{
+    @apply lg:max-w-[30%] lg:mx-auto
+}
+.rewards__header h2{
+    @apply text-[1.8rem] font-semibold pb-[1.5rem] max-w-[18rem] mx-auto 
+}
+.rewards__header p{
+    @apply pb-[2rem]
+}
+.sky__pic{
+    @apply h-[8rem] w-[20rem] mx-auto
+}
+.rewards__miles p{
+    @apply text-center pb-[1.5rem]
+}
+.miles__button{
+    @apply flex justify-center
+}
+.rewards{
+    background-image:url("./img/bg.webp");
+    background-size:cover;
+    height:600px;
+    background-repeat:no-repeat;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+.starz{
+    @apply lg:flex lg:justify-center
+}
+
+
+
 
 
 

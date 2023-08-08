@@ -9,10 +9,12 @@ module.exports = {
         'puti':'#ffffff',
     'maitim':'#2b2b2b',
     'lasalle':'#006341',
-    'semento':'hsl(240,1.51%,50.98%)'
+    'semento':'hsl(240,1.51%,50.98%)',
+    'medyowhite':'#F2F0EB',
       },
       backgroundImage:{
-        'star':"url('./img/star.png')"
+        'star':"url('./img/star.png')",
+        'bg':"url('./img/bg.webp')",
       }
     },
   },
