@@ -24,6 +24,16 @@ function removeActiveContent() {
  });
 }
 
+const drop = document.querySelectorAll(".footer__nav ul li");
+drop.forEach((link) => {
+    link.addEventListener("click", () => {
+        link.nextElementSibling.classList.toggle("open");
+        link.querySelector("i").classList.toggle("open");
+    });
+});
+
+
+
 
 
 
@@ -55,10 +65,11 @@ function removeActiveContent() {
 // }
 
 
-const headerNav = document.querySelector(".header__nav");
 const toggleMenu = document.querySelector(".toggle__menu");
+const headerNav = document.querySelector(".header__nav");
+const hair = document.querySelector(".buhok");
 toggleMenu.addEventListener("click", () => {
-    toggleMenu.classList.toggle("open");
-    headerNav.classList.toggle("open");
-
+  toggleMenu.classList.toggle("open");
+  headerNav.classList.toggle("open");
+  hair.classList.toggle("open");
 });

@@ -19,8 +19,8 @@ body{
 .altcontainer{
     max-width: 115rem;
     margin: 0 auto;
-    padding: 2rem;
-    height: 100%;
+    padding:2rem;
+    height:100%;
     @media screen and (max-width:500px){
         background-position-y:6rem;
         background-size:contain;
@@ -32,7 +32,14 @@ body{
 
 @layer components{
     .header__nav.open{
-    @apply right-[0rem] transition-all
+    @apply right-[0rem] transition-all top-[5rem] z-[999]
+}
+.header{
+    background:#ffffff;
+    position:relative;
+    position:fixed;
+    width:100%;
+    box-shadow: rgba (0, 0, 0, 0.35) 0px 5px 15px;
 }
 
     .toggle__menu.open .transition-transform:nth-child(1){
@@ -52,7 +59,7 @@ body{
     }
 
     .buhok.open{
-        @apply h-[100vh] w-[100%] bg-black absolute z-[999] top-[5.6rem] left-[0] opacity-[.5] transition-all
+        @apply h-[100vh] w-[100%] bg-black absolute z-[998] top-[5.6rem] left-[0] opacity-[.5] transition-all
     }
 
     .kalbo{
@@ -155,6 +162,22 @@ body{
 .btn.bg--green:hover{
     background-color: #006341;
 }
+.btn.bg--white{
+    background:#ffffff;
+    color:#2b2b2b;
+    border:1px solid #2b2b2b;
+}
+.btn.bg--white:hover{
+    background-color:#808080;
+}
+.btn.bg--black{
+    background:#2b2b2b;
+    color:#ffffff;
+    border:1px solid #ffffff;
+}
+.btn.bg--black:hover{
+    background-color: #006341;
+}
 /*BANNER*/
 .banner{
     background-image:url("./img/star.png");
@@ -188,6 +211,9 @@ body{
 }
 .banner__wrapper a:first-child{
     @apply lg:underline lg:hover:text-lasalle hover:no-underline
+}
+.banner__wrapper ul{
+    @apply hover:no-underline
 }
 .started__title h2{
     @apply text-[2rem] text-center pb-[1rem]
@@ -362,6 +388,119 @@ body{
 .starz{
     @apply lg:flex lg:justify-center
 }
+.rewards__master{
+    @apply lg:flex lg:flex-col lg:items-center
+}
+.questions__wrapper h2{
+    @apply text-[1.5rem] font-semibold pb-[1rem]
+}
+.questions__wrapper p{
+    @apply w-[104%] mx-auto
+}
+.questions__wrapper a{
+    @apply underline text-lasalle hover:no-underline
+}
+.questions__header{
+    @apply lg:max-w-[28rem] lg:mx-auto
+}
+.forms__wrapper a{
+    @apply underline text-lasalle hover:no-underline
+}
+.forms__wrapper h4{
+    @apply text-[.9rem] font-semibold
+}
+.forms__first h4{
+    @apply font-thin pb-[1rem]
+}
+.forms__first p{
+    @apply pb-[.5rem] text-[.9rem]
+}
+.forms__second h4{
+    @apply pb-[1rem] pt-[1rem]
+}
+.forms__second p{
+    @apply pb-[1rem] text-[.9rem]
+}
+.forms__third h4{
+    @apply pb-[1rem]
+}
+.forms__third p{
+    @apply pb-[1rem] text-[.9rem]
+}
+.forms__fourth h4{
+    @apply pb-[1rem]
+}
+.forms__fourth p{
+    @apply pb-[1rem] text-[.9rem] 
+}
+.forms__fifth h4{
+    @apply pb-[1rem] 
+}
+.forms__fifth p{
+    @apply text-[.9rem] 
+}
+/* .forms__main{
+    @apply lg:grid lg:grid-cols-2
+} */
+.forms__main{
+    @apply lg:grid lg:grid-cols-2 
+}
+.forms__second{
+    @apply lg:h-full lg:my-auto
+}
+.forms__third{
+    @apply lg:h-full lg:my-auto
+}
+.forms__fourth{
+    @apply lg:my-auto lg:h-full
+}
+.forms__fifth{
+    @apply lg:h-full lg:my-auto 
+}
+.drop{
+    @apply overflow-hidden max-h-[0rem] lg:max-h-[25rem]
+}
+.drop.open{
+    @apply max-h-[25rem] 
+}
+.footer__nav ul.nav li a i.open{
+    @apply ease-in duration-[.5s] rotate-180 
+}
+.footer__nav ul.nav li a i{
+    @apply lg:hidden p-[1rem] ease-in duration-[.2s] bg-transparent
+}
+.footer__nav ul.nav li a i:hover{
+    @apply p-[1rem] bg-gray-300 ease-in duration-[.2s] rounded-full
+}
+.footer__nav ul.nav li a{
+    @apply flex pb-[2rem]
+}
+.drop li{
+    @apply text-[1rem] hover:text-lasalle
+}
+.footer__nav ul.nav li a{
+    @apply flex justify-between items-center
+}
+.footer__nav{
+    @apply lg:flex lg:gap-[5rem] 
+}
+.puter__wrapper{
+    @apply flex gap-[1.5rem] text-[2rem] pt-[2rem]
+}
+.puter__wrapper a{
+    @apply hover:bg-gray-200 rounded-full px-[.2rem]
+}
+.last__wrapper{
+    @apply flex flex-col gap-[1rem] font-light lg:flex lg:flex-row
+}
+.last__p p{
+@apply pt-[1rem] text-gray-400
+}
+.last__wrapper a{
+    @apply hover:underline
+}
+
+
 
 
 
