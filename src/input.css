@@ -580,7 +580,7 @@ body{
     @apply pt-[2rem] lg:flex lg:flex-row-reverse lg:max-w-[90rem] lg:mx-auto 
 }
 .group4{
-    @apply pt-[2rem] lg:flex lg:flex-row lg:max-w-[90rem] lg:mx-auto
+    @apply pt-[2rem] lg:flex lg:flex-row lg:max-w-[83rem] lg:mx-auto
 }
 .after{
     @apply text-center pt-[2rem] w-[90%] mx-auto lg:max-w-[40rem] lg:mx-auto
