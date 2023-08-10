@@ -163,6 +163,14 @@ body{
 .btn.bg--green:hover{
     background-color: #006341;
 }
+.btn.bg--purple{
+    background:#4C5FD5;
+    color:#ffffff;
+    border:1px solid #ffffff;
+}
+.btn.bg--purple:hover{
+    background-color: #ADD8E6;
+}
 .btn.bg--white{
     background:#ffffff;
     color:#2b2b2b;
@@ -500,6 +508,122 @@ body{
 .last__wrapper a{
     @apply hover:underline
 }
+
+/*Home*/
+.smoothie__content{
+    @apply text-center bg-mapink lg:max-w-[45rem] lg:mx-auto lg:pt-[11rem]
+}
+.smoothie__content h2{
+    @apply text-[2rem] pt-[3rem] pb-[3rem] lg:text-[3rem] lg:w-[60%] lg:mx-auto
+}
+.smoothie__content p{
+    @apply text-[1.2rem] pb-[2.5rem] lg:text-sbgreen lg:w-[60%] lg:mx-auto
+}
+.smoothie__button{
+    @apply flex justify-center pt-[1.5rem] pb-[1.5rem]
+}
+.smoothie{
+    @apply lg:max-w-[45rem] lg:mx-auto
+}
+.shake__content{
+    @apply text-center bg-sbgreen text-white lg:max-w-[45rem] lg:mx-auto lg:pt-[12rem]
+}
+.shake__content h2{
+    @apply text-[2rem] pt-[3rem] pb-[3rem]
+}
+.shake__content p{
+    @apply text-[1.2rem] pb-[2.5rem]
+}
+.shake__button{
+    @apply flex justify-center pt-[1.5rem] pb-[1.5rem]
+}
+.shake{
+    @apply lg:max-w-[45rem] lg:mx-auto
+}
+.frappe__content{
+    @apply text-center bg-grimace lg:max-w-[45rem] lg:mx-auto lg:pt-[11rem]
+}
+.frappe__content h2{
+    @apply text-[2rem] pt-[3rem] pb-[3rem] lg:font-bold
+}
+.frappe__content p{
+    @apply text-[1.2rem] pb-[2.5rem]
+}
+.frappe__button{
+    @apply flex justify-center pt-[1.5rem] pb-[1.5rem]
+}
+.frappe{
+    @apply lg:max-w-[45rem] lg:mx-auto
+}
+.pop__content{
+    @apply text-center bg-yilow lg:max-w-[45rem] lg:mx-auto lg:pt-[12rem]
+}
+.pop__content h2{
+    @apply text-[2rem] pt-[3rem] pb-[3rem]
+}
+.pop__content p{
+    @apply text-[1.2rem] pb-[2.5rem]
+}
+.pop__button{
+    @apply flex justify-center pt-[1.5rem] pb-[1.5rem]
+}
+.pop{
+    @apply lg:max-w-[45rem] lg:mx-auto
+}
+.group1{
+    @apply pt-[2rem] lg:flex lg:flex-row-reverse lg:max-w-[90rem] lg:mx-auto
+}
+.group2{
+    @apply pt-[2rem] lg:flex lg:flex-row lg:max-w-[90rem] lg:mx-auto
+}
+.group3{
+    @apply pt-[2rem] lg:flex lg:flex-row-reverse lg:max-w-[90rem] lg:mx-auto 
+}
+.group4{
+    @apply pt-[2rem] lg:flex lg:flex-row lg:max-w-[90rem] lg:mx-auto
+}
+.after{
+    @apply text-center pt-[2rem] w-[90%] mx-auto lg:max-w-[40rem] lg:mx-auto
+}
+
+/*Prac*/
+.header__content img{
+    @apply h-[4rem] w-[4rem]
+}
+.header__wrapper{
+    @apply flex justify-between 
+}
+.header__content{
+    @apply flex 
+}
+.header__content h2{
+    @apply pt-[1rem] text-white
+}
+.plan__wrapper{
+    @apply bg-blue-400 
+}
+.plan__content{
+    @apply pt-[6rem] text-[1.3rem] flex flex-col gap-[1rem]
+}
+.plan__content h2{
+    @apply text-white font-bold ml-[1rem]
+}
+.plan__content p{
+    @apply ml-[1rem] text-white pb-[1.3rem]
+}
+.plan__buttons{
+    @apply flex flex-col max-w-[27rem] text-center mx-auto gap-[.6rem]
+}
+.plan__dulo a{
+    @apply underline
+}
+.plan__dulo{
+    @apply text-[1rem] pt-[1.5rem] ml-[1rem]
+}
+
+
+
+
 
 
 
